@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import EventList from "../views/EventList";
 import EventShow from "../views/EventShow";
 import EventCreate from "../views/EventCreate";
+import User from "../views/User";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/event/create",
     name: "event-create",
     component: EventCreate
+  },
+  {
+    path: "/user/:username",
+    name: "user",
+    component: User
   }
 ];
 
